@@ -1,0 +1,20 @@
+{
+  "btn": {
+    "main": "Home",
+    "bookmarks": "Bookmarks",
+    "day": "Day",
+    "night": "Night",
+    "today": "Today",
+    "for5days": "For 5 days",
+    "ok": "Ok",
+    "not": "No"
+    
+  },
+  "empty": "Empty",
+  "youWantContinue": "Do you want to continue?",
+  "locationsLimit": "It is impossible to add element element (no more than 5)",
+  "notDeleteLastElement": "It is impossible to remove the remaining element",
+  "notSupportedGeolocation": "Geolocation is not supported by this browser",
+  "invalidIndex": "Invalid index for selection",
+  "bookmarksLimit": "To add a new city, remove at least 1, as you cannot add no more than 5"
+}
