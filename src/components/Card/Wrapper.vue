@@ -43,8 +43,7 @@
     <div class="main-wrapper_details">
       <Details
         :currentData="averageData"
-        :currentTimesOfDay="timesOfDay"
-        @selectDate="item => selectedDate = item"/>
+        :currentTimesOfDay="timesOfDay"/>
     </div>
     <hr class="hr">
     <Chart

@@ -15,7 +15,6 @@ let myChart = null
 // Props
 const props = defineProps({
   currentData: { type: Object, default: () => ({}) },
-  selectedDate: { type: String, default: '' },
   currentTimesOfDay: { type: String, default: 'day' },
   weatherFormat: { type: String, default: '' },
   index: { type: Number, default: 0 },
@@ -35,7 +34,7 @@ const dataForChart = computed(() => {
 })
 
 // Wathers
-watch(() => [props.selectedDate, props.currentTimesOfDay, props.weatherFormat], () => (createChart()))
+watch(() => [props.currentTimesOfDay, props.weatherFormat], () => (createChart()))
 
 // Hooks
 onMounted(() => createChart())

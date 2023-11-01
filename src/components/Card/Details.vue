@@ -3,8 +3,7 @@
     v-for="weather in currentData" 
     :key="weather.date" 
     class="details-wrapper"
-    :class="{ 'night': currentTimesOfDay === 'night' }"
-    @click="$emit('selectDate', weather.date)">
+    :class="{ 'night': currentTimesOfDay === 'night' }">
     <div class='wave -one'></div>
     <div class='wave -two'></div>
     <div class='wave -three'></div>
@@ -26,7 +25,4 @@ const props = defineProps({
   currentData: { type: Array, default: () => [] },
   currentTimesOfDay: { type: String, default: 'day' },
 })
-
-// Emits
-const emit = defineEmits(['selectDate'])
 </script>
